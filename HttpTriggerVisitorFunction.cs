@@ -38,8 +38,8 @@ public class HttpTriggerVisitorFunction
             var data = JsonConvert.DeserializeObject<dynamic>(requestBody);
 
             // Extract name and email from request
-            string name = data?.name;
-            string email = data?.email;
+            string? name = data?.name;
+            string? email = data?.email;
 
             // Validate required fields
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(email))
