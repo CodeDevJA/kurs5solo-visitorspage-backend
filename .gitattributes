@@ -1,0 +1,8 @@
+# Use LF for code and config files
+*.py text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.sh text eol=lf
+
+# Use CRLF for Windows batch files
+*.bat text eol=crlf
